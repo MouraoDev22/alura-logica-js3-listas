@@ -5,6 +5,7 @@
 verificarPalindromo ();
 
 function verificarPalindromo () {
+    
     let palavra = prompt ('Digite uma palavra ou frase:');
     let separarPalavra = palavra.split ('');
     let inverterPalavra = separarPalavra.reverse ('');
@@ -15,4 +16,5 @@ function verificarPalindromo () {
     } else {
         console.log ('Isto não é um palíndromo.');
     }
+
 }
