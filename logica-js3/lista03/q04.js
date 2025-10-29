@@ -8,12 +8,10 @@ conversorGraus ();
 
 function conversorGraus () {
     
-    let celcius;
-    let fahrenheit;
-    let temperatura = prompt (Number ('Digite uma temperatura (Apenas números):'));
-    let tipoTemperatura = prompt ('É em Celcius ou Fahrenheit? Digite 1 para Celcius e 2 para Fahrenheit.');
+    let temperatura = Number (prompt ('Digite uma temperatura (Apenas números):'));
+    let tipoTemperatura = Number (prompt ('É em Celcius ou Fahrenheit? Digite 1 para Celcius e 2 para Fahrenheit.'));
 
-    while (tipoTemperatura !== 1 || tipoTemperatura !== 2) {
+    while (tipoTemperatura !== 1 && tipoTemperatura !== 2) {
     tipoTemperatura = prompt ('É em Celcius ou Fahrenheit? Digite 1 para Celcius e 2 para Fahrenheit.');
     }
 
@@ -27,12 +25,11 @@ function conversorGraus () {
 
 function conversorGrausCparaF (temp) {
     celcius = temp;
-    fahrenheit = celcius * 9 / 5;
+    let fahrenheit = (temp * 9 / 5) + 32;
     console.log (`${fahrenheit}°F`);
 }
 
 function conversorGrausFparaC (temp) {
-    fahrenheit = temp;
-    celcius = fahrenheit * 5 / 9;
+    let celcius = (temp - 32) * 5 / 9;
     console.log (`${celcius}°C`);
 }
