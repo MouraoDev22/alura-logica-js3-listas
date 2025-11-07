@@ -4,11 +4,9 @@
 // um bloco condicional para determinar se o número é par ou ímpar.
 
 let numero = prompt ('Digite um número:');
-
 verificarParImpar (numero);
 
 function verificarParImpar (num) {
-
     num = Number (num);
 
     if (num % 2 == 0) {
@@ -16,5 +14,4 @@ function verificarParImpar (num) {
     } else {
         alert ('Este é um número ímpar.');
     }
-
 } 

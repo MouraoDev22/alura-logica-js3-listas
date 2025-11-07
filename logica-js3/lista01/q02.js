@@ -24,8 +24,6 @@ while (isNaN (num3)) {
 ordenarNumeros ();
 
 function ordenarNumeros (num1, num2, num3) {
-    
     const numerosOrdenados = [num1, num2, num3].sort ((x, y) => x - y);
     console.log (`Números ordenados: ${numerosOrdenados.join (', ')}`);
-
 }

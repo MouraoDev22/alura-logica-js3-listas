@@ -7,5 +7,4 @@ let numero1 = 100;
 let numero2 = 900;
 let soma = numero1 + numero2;
 let mensagem = `A soma de ${numero1} e ${numero2} é ${soma}.`;
-
-console.log (mensagem);
+sconsole.log (mensagem);

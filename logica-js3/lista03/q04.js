@@ -7,7 +7,6 @@
 conversorGraus ();
 
 function conversorGraus () {
-    
     let temperatura = Number (prompt ('Digite uma temperatura (Apenas números):'));
     let tipoTemperatura = Number (prompt ('É em Celcius ou Fahrenheit? Digite 1 para Celcius e 2 para Fahrenheit.'));
 
@@ -20,7 +19,6 @@ function conversorGraus () {
     } else {
     conversorGrausFparaC (temperatura);
     }
-
 }
 
 function conversorGrausCparaF (temp) {

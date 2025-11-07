@@ -7,7 +7,6 @@
 document.getElementById ("mostraNome").textContent = '';
 
 function capturarValores () {
-    
     let nome = document.getElementById ("campoNome").value;
     let idade = document.getElementById ("campoIdade").value;
     let exibirNomeIdade = document.getElementById ("mostraNome");
@@ -20,5 +19,4 @@ function capturarValores () {
 
     exibirNomeIdade.textContent = `${nome}, ${idade} anos.`;
     console.log (`${nome}, ${idade} anos.`);
-
 }
